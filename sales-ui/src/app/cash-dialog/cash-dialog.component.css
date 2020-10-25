@@ -1,0 +1,6 @@
+.close {
+    float: right;
+    padding: 5px;
+    line-height: 14px;
+    min-width: auto;
+}

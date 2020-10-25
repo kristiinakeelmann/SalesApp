@@ -1,0 +1,23 @@
+<div class="content" fxLayout="row wrap" fxLayoutGap="16px grid">
+    <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let item of getItems()">
+        <mat-card (click)="addToBasket(item.id)">
+            <mat-card-header>
+                <mat-card-title>{{getName(item.id)}}</mat-card-title>
+                <mat-card-subtitle>{{getItemCountFromBasket(item.id)}}/{{item.quantity}}</mat-card-subtitle>
+            </mat-card-header>
+            <img [ngClass]="{'disabled': !isInStock(item.id)}" mat-card-image class="icon" src="{{getIcon(item.id)}}"
+                 alt="Icon of {{getName(item.id)}}">
+            <mat-card-content>{{getPrice(item.id)}}</mat-card-content>
+        </mat-card>
+    </div>
+</div>
+
+<div fxLayout="column">
+    <div fxLayout="row">
+        <p class="total">{{getTotal()}}</p>
+    </div>
+    <div fxLayout="row" fxLayoutGap="16px">
+        <button mat-stroked-button (click)="reset()" class="reset">Reset</button>
+        <button mat-raised-button (click)="checkout()" class="checkout">Checkout</button>
+    </div>
+</div>

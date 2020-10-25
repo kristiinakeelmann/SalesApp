@@ -1,0 +1,40 @@
+.content {
+    padding: 15px;
+}
+
+.content > mat-card {
+    width: 200px;
+}
+
+.mat-card {
+    margin: 15px;
+}
+
+.mat-card-title {
+    font-size: 25px;
+    color: floralwhite;
+}
+
+.mat-card-subtitle {
+    font-size: 18px;
+    text-align: center;
+    color: floralwhite;
+}
+
+.mat-card-header {
+    justify-content: center;
+}
+
+.mat-card-content {
+    text-align: center;
+    font-size: 25px;
+    color: floralwhite;
+}
+
+.button {
+    border: none;
+}
+
+.disabled {
+    opacity: 0.1
+}

@@ -1,0 +1,15 @@
+<div class="dialog">
+    <button class="close" mat-button (click)="onClose()">x</button>
+    <h1 mat-dialog-title>Calculator</h1>
+    <p>Insert amount</p>
+    <input [(ngModel)]="givenSum">
+    <p>Exchange</p>
+    <div *ngFor="let note of notesBackList">
+        <p>{{note}}</p>
+    </div>
+    <div mat-dialog-content></div>
+    <div mat-dialog-actions fxLayoutGap="16px">
+        <button mat-stroked-button (click)="onClose()" tabindex="-1">Close</button>
+        <button mat-button (click)="cashBackCalculation()">Calculate</button>
+    </div>
+</div>
