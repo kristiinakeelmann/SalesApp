@@ -8,6 +8,10 @@ Application to help you run your sales event.
 * Npm vesion 6.14.4
 * Angular cli 10.1.7
 
-## Instructions
-To run the front-end go to sales-ui directory and use command ng-serve
-For back-end go to sales-api directory and use commang ./gradlew bootrun
+## Instructions to run app locally
+Go to sales-api directory and use command ```./gradlew bootrun``` to run the back-end
+
+Go to sales-ui directory and use command ```ng-serve``` to run the front-end
+
+
+The application will run at http://localhost:4200/
