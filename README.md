@@ -11,7 +11,7 @@ Application to help you run your sales event.
 ## Instructions to run app locally
 Go to sales-api directory and use command ```./gradlew bootrun``` to run the back-end
 
-Go to sales-ui directory and use command ```ng-serve``` to run the front-end
+Go to sales-ui directory and use commands ```npm-install``` and ```ng-serve``` to run the front-end
 
 
 The application will run at http://localhost:4200/
