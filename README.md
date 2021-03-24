@@ -5,7 +5,7 @@ Application to help you run your sales event.
 ## Prerequisites 
 * Java 11 SDK
 * Node version 10.19.0
-* Npm vesion 6.14.4
+* Npm version 6.14.4
 * Angular cli 10.1.7
 
 ## Instructions to run app locally
